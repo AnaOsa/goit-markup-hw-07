@@ -561,6 +561,7 @@ img {
 }
 .modal-title {
     margin-bottom: 12px;
+    font-weight: 700;
     font-size: 20px;
     line-height: calc(23 / 20);
     text-align: center;
