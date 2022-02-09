@@ -1,5 +1,4 @@
 .logo {
-    margin-right: 93px;
     font-family: 'Raleway', sans-serif;
     font-weight: 700;
     font-size: 26px;
@@ -7,12 +6,12 @@
     letter-spacing: 0.03em;
     color: var(--accent-color);
 }
-.logo-dark {
+.logo--dark {
     color: #000000;
 }
-.logo-light {
+.logo--light {
     color: var(--white-text-color);
 }
-.logo-footer {
-    margin-right: 0;
+.page-header__logo {
+    margin-right: 93px;
 }

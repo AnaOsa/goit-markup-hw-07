@@ -1,17 +1,14 @@
-.about-section {
-    padding-top: 0;
-}
 .about {
     display: flex;
 }
-.about-item:not(:last-child) {
+.about__item:not(:last-child) {
     margin-right: 30px;
 }
 
-.about-thumb {
+.about__inner {
     position: relative;
 }
-.about-text {
+.about__text {
     position: absolute;
     bottom: 0;
     width: 100%;

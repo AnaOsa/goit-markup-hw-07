@@ -16,36 +16,39 @@
     </head>
 
     <body>
+        <!-- Что делать с классом контейнер?? БЭМ -->
+        <!-- Что делать с общим классом линк? -->
+        <!-- Выносить ли общий класс в коммон ? как логотип? -->
         <header class="page-header">
-            <div class="container container-nav">
+            <div class="page-header__wrap container">
                 <nav class="navigation">
-                    <a href="./index.html" class="logo" lang="en"
-                        >Web<span class="logo-dark">Studio</span></a
+                    <a href="./index.html" class="logo page-header__logo" lang="en"
+                        >Web<span class="logo--dark">Studio</span></a
                     >
-                    <ul class="site-nav">
-                        <li class="site-nav-item">
-                            <a class="site-nav-link link current" href="./index.html">Студия</a>
+                    <ul class="navigation__list">
+                        <li class="navigation__item">
+                            <a class="navigation__link navigation__link--current link " href="./index.html">Студия</a>
                         </li>
-                        <li class="site-nav-item">
-                            <a class="site-nav-link link" href="./portfolio.html">Портфолио</a>
+                        <li class="navigation__item">
+                            <a class="navigation__link link" href="./portfolio.html">Портфолио</a>
                         </li>
-                        <li class="site-nav-item">
-                            <a class="site-nav-link link" href="#footer">Контакты</a>
+                        <li class="navigation__item">
+                            <a class="navigation__link link" href="#footer">Контакты</a>
                         </li>
                     </ul>
                 </nav>
-                <ul class="contacts">
-                    <li class="contacts-item">
-                        <a class="contacts-link link" href="mailto:info@devstudio.com">
-                            <svg class="icon-contacts" width="16" height="12">
+                <ul class="page-header__contacts-list">
+                    <li class="page-header__contacts-item">
+                        <a class="page-header__contacts-link link" href="mailto:info@devstudio.com">
+                            <svg class="page-header__contacts-icon" width="16" height="12">
                                 <use href="./images/icons.svg#icon-email"></use>
                             </svg>
                             info@devstudio.com
                         </a>
                     </li>
-                    <li class="contacts-item">
-                        <a class="contacts-link link" href="tel:+380961111111">
-                            <svg class="icon-contacts" width="10" height="16">
+                    <li class="page-header__contacts-item">
+                        <a class="page-header__contacts-link link" href="tel:+380961111111">
+                            <svg class="page-header__contacts-icon" width="10" height="16">
                                 <use href="./images/icons.svg#icon-tel"></use>
                             </svg>
                             +38 096 111 11 11
@@ -57,7 +60,7 @@
         <main>
             <section class="hero">
                 <div class="container">
-                    <h1 class="hero-title">
+                    <h1 class="hero__title">
                         Эффективные решения <br />
                         для вашего бизнеса
                     </h1>
@@ -68,50 +71,50 @@
                 <div class="container">
                     <h2 class="visually-hidden">Наши достоинства</h2>
                     <ul class="benefits">
-                        <li class="benefits-item">
-                            <div class="thumb">
-                                <svg class="icon" width="70" height="70">
+                        <li class="benefits__item">
+                            <div class="benefits__inner">
+                                <svg width="70" height="70">
                                     <use href="./images/icons.svg#icon-antenna"></use>
                                 </svg>
                             </div>
-                            <h3 class="title-benefits">Внимание к деталям</h3>
-                            <p class="text-benefits">
+                            <h3 class="benefits__title">Внимание к деталям</h3>
+                            <p class="benefits__text">
                                 Идейные соображения, а также начало повседневной работы по
                                 формированию позиции.
                             </p>
                         </li>
-                        <li class="benefits-item">
-                            <div class="thumb">
-                                <svg class="icon" width="70" height="70">
+                        <li class="benefits__item">
+                            <div class="benefits__inner">
+                                <svg width="70" height="70">
                                     <use href="./images/icons.svg#icon-clock"></use>
                                 </svg>
                             </div>
-                            <h3 class="title-benefits">Пунктуальность</h3>
-                            <p class="text-benefits">
+                            <h3 class="benefits__title">Пунктуальность</h3>
+                            <p class="benefits__text">
                                 Задача организации, в особенности же рамки и место обучения кадров
                                 влечет за собой.
                             </p>
                         </li>
-                        <li class="benefits-item">
-                            <div class="thumb">
-                                <svg class="icon" width="70" height="70">
+                        <li class="benefits__item">
+                            <div class="benefits__inner">
+                                <svg width="70" height="70">
                                     <use href="./images/icons.svg#icon-diagram"></use>
                                 </svg>
                             </div>
-                            <h3 class="title-benefits">Планирование</h3>
-                            <p class="text-benefits">
+                            <h3 class="benefits__title">Планирование</h3>
+                            <p class="benefits__text">
                                 Равным образом консультация с широким активом в значительной степени
                                 обуславливает.
                             </p>
                         </li>
-                        <li class="benefits-item">
-                            <div class="thumb">
-                                <svg class="icon" width="70" height="70">
+                        <li class="benefits__item">
+                            <div class="benefits__inner">
+                                <svg width="70" height="70">
                                     <use href="./images/icons.svg#icon-astronaut"></use>
                                 </svg>
                             </div>
-                            <h3 class="title-benefits">Современные технологии</h3>
-                            <p class="text-benefits">
+                            <h3 class="benefits__title">Современные технологии</h3>
+                            <p class="benefits__text">
                                 Значимость этих проблем настолько очевидна, что реализация плановых
                                 заданий.
                             </p>
@@ -119,38 +122,38 @@
                     </ul>
                 </div>
             </section>
-            <section class="section about-section">
+            <section class="section section--no-padding">
                 <div class="container">
                     <h2 class="title">Чем мы занимаемся</h2>
                     <ul class="about">
-                        <li class="about-item">
-                            <div class="about-thumb">
+                        <li class="about__item">
+                            <div class="about__inner">
                                 <img
                                     src="./images/box-1.jpg"
                                     alt="Мужские руки печатают"
                                     width="370"
                                 />
-                                <p class="about-text">Десктопные приложения</p>
+                                <p class="about__text">Десктопные приложения</p>
                             </div>
                         </li>
-                        <li class="about-item">
-                            <div class="about-thumb">
+                        <li class="about__item">
+                            <div class="about__inner">
                                 <img
                                     src="./images/box-2.jpg"
                                     alt="Женские руки за компьютером с телефоном в руках"
                                     width="370"
                                 />
-                                <p class="about-text">Мобильные приложения</p>
+                                <p class="about__text">Мобильные приложения</p>
                             </div>
                         </li>
-                        <li class="about-item">
-                            <div class="about-thumb">
+                        <li class="about__item">
+                            <div class="about__inner">
                                 <img
                                     src="./images/box-3.jpg"
                                     alt="Человек выбирает цвет на планшете с помощью ручки"
                                     width="370"
                                 />
-                                <p class="about-text">Дизайнерские решения</p>
+                                <p class="about__text">Дизайнерские решения</p>
                             </div>
                         </li>
                     </ul>
@@ -460,8 +463,8 @@
         <footer class="footer" id="footer">
             <div class="container footer-container">
                 <div class="footer-inner">
-                    <a href="./index.html" class="logo-footer logo" lang="en"
-                        >Web<span class="logo-light">Studio</span></a
+                    <a href="./index.html" class="logo" lang="en"
+                        >Web<span class="logo--light">Studio</span></a
                     >
                     <address class="address">
                         <ul class="footer-contacts">
