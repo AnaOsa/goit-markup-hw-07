@@ -1,15 +1,15 @@
-.company-list {
+.company {
     display: flex;
 }
 
-.company-item:not(:last-child) {
+.company__item:not(:last-child) {
     margin-right: 30px;
 }
-.company-item {
+.company__item {
     width: 170px;
     height: 92px;
 }
-.company-link {
+.company__link {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -22,16 +22,18 @@
 
     transition: border-color var(--animation-duration) var(--animation-timing-function);
 }
-.company-icon {
+
+.company__icon {
     color: var(--icon-color);
     fill: currentColor;
     transition: color var(--animation-duration) var(--animation-timing-function);
 }
-.company-link:hover .company-icon,
-.company-link:focus .company-icon {
-    color: var(--accent-color);
-}
-.company-link:focus,
-.company-link:hover {
+.company__link:focus,
+.company__link:hover {
     border-color: var(--accent-color);
+}
+
+.company__link:hover .company__icon,
+.company__link:focus .company__icon {
+    color: var(--accent-color);
 }
