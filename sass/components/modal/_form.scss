@@ -142,13 +142,13 @@
     fill: currentColor;
     transition: color var(--animation-duration) var(--animation-timing-function);
 }
-input:focus-within + .modal-form__checkbox-icon {
+.modal-form__checkbox:focus-within + .modal-form__checkbox-icon {
     color: var(--accent-color);
 }
-input:checked + .modal-form__checkbox-icon {
+.modal-form__checkbox:checked + .modal-form__checkbox-icon {
     opacity: 0;
 }
-input:checked ~ .modal-form__check-icon {
+.modal-form__checkbox:checked ~ .modal-form__check-icon {
     opacity: 1;
     z-index: 1;
     color: var(--white-text-color);

@@ -1169,15 +1169,15 @@ img {
   transition: color var(--animation-duration) var(--animation-timing-function);
 }
 
-input:focus-within + .modal-form__checkbox-icon {
+.modal-form__checkbox:focus-within + .modal-form__checkbox-icon {
   color: var(--accent-color);
 }
 
-input:checked + .modal-form__checkbox-icon {
+.modal-form__checkbox:checked + .modal-form__checkbox-icon {
   opacity: 0;
 }
 
-input:checked ~ .modal-form__check-icon {
+.modal-form__checkbox:checked ~ .modal-form__check-icon {
   opacity: 1;
   z-index: 1;
   color: var(--white-text-color);
@@ -1202,11 +1202,11 @@ input:checked ~ .modal-form__check-icon {
   margin-bottom: 50px;
 }
 
-.filter-item:not(:last-child) {
+.filter__item:not(:last-child) {
   margin-right: 8px;
 }
 
-.btn-filter {
+.filter__btn {
   padding: 6px 22px;
   font-family: inherit;
   font-weight: 500;
@@ -1225,8 +1225,8 @@ input:checked ~ .modal-form__check-icon {
   transition: color var(--animation-duration) var(--animation-timing-function), background-color var(--animation-duration) var(--animation-timing-function), box-shadow var(--animation-duration) var(--animation-timing-function), -webkit-box-shadow var(--animation-duration) var(--animation-timing-function);
 }
 
-.btn-filter:hover,
-.btn-filter:focus {
+.filter__btn:hover,
+.filter__btn:focus {
   color: var(--white-text-color);
   background-color: var(--accent-color);
   -webkit-box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
@@ -1243,18 +1243,18 @@ input:checked ~ .modal-form__check-icon {
   margin-top: calc(-1 * var(--works-gap));
 }
 
-.works-item {
+.works__item {
   -ms-flex-preferred-size: calc(100% / 3 - 30px);
       flex-basis: calc(100% / 3 - 30px);
   margin-left: var(--works-gap);
   margin-top: var(--works-gap);
 }
 
-.works-link {
+.works__link {
   display: block;
 }
 
-.works-link {
+.works__link {
   -webkit-transition-property: -webkit-box-shadow;
   transition-property: -webkit-box-shadow;
   transition-property: box-shadow;
@@ -1265,29 +1265,23 @@ input:checked ~ .modal-form__check-icon {
           transition-timing-function: var(--animation-timing-function);
 }
 
-.works-link:hover,
-.works-link:focus {
+.works__link:hover,
+.works__link:focus {
   -webkit-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
           box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
-.works-link:hover .works-overlay,
-.works-link:focus .works-overlay {
-  -webkit-transform: translateY(0);
-          transform: translateY(0);
-}
-
-.works-thumb {
+.thumb {
   position: relative;
   overflow: hidden;
 }
 
-.works-overlay {
+.thumb__overlay {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
-  height: 100%;
+  height: 101%;
   background-color: rgba(33, 150, 243, 0.9);
   -webkit-transform: translateY(100%);
           transform: translateY(100%);
@@ -1297,7 +1291,7 @@ input:checked ~ .modal-form__check-icon {
   transition: transform var(--animation-duration) var(--animation-timing-function), box-shadow var(--animation-duration) var(--animation-timing-function), -webkit-transform var(--animation-duration) var(--animation-timing-function), -webkit-box-shadow var(--animation-duration) var(--animation-timing-function);
 }
 
-.overlay-text {
+.thumb__text {
   padding: 63px 24px;
   margin: 0;
   font-size: 18px;
@@ -1306,7 +1300,13 @@ input:checked ~ .modal-form__check-icon {
   color: var(--white-text-color);
 }
 
-.border {
+.works__link:hover .thumb__overlay,
+.works__link:focus .thumb__overlay {
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+}
+
+.works__border {
   padding: 20px 24px;
   width: 370px;
   border: 1px solid #eeeeee;
@@ -1315,7 +1315,7 @@ input:checked ~ .modal-form__check-icon {
           box-sizing: border-box;
 }
 
-.works-title {
+.works__title {
   font-weight: 700;
   margin-bottom: 4px;
   font-size: 18px;
@@ -1324,7 +1324,7 @@ input:checked ~ .modal-form__check-icon {
   color: var(--title-color);
 }
 
-.works-text {
+.works__text {
   margin: 0;
   font-size: 16px;
   line-height: 1.87;
