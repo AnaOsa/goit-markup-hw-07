@@ -14,7 +14,7 @@
     margin-bottom: 30px;
     width: 270px;
     height: 120px;
-    background: #f5f4fa;
+    background: $secondary-bg;
     border-radius: 4px;
 }
 
@@ -23,7 +23,7 @@
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.03em;
-    color: var(--title-color);
+    color: $title-color;
     text-transform: uppercase;
 }
 .benefits__text {

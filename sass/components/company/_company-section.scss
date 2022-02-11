@@ -16,24 +16,24 @@
     width: 100%;
     height: 100%;
     background-color: transparent;
-    border: 1px solid var(--icon-color);
+    border: 1px solid $icon-color;
     box-sizing: border-box;
     border-radius: 4px;
 
-    transition: border-color var(--animation-duration) var(--animation-timing-function);
+    transition: border-color $animation-duration $animation-timing-function;
 }
 
 .company__icon {
-    color: var(--icon-color);
+    color: $icon-color;
     fill: currentColor;
-    transition: color var(--animation-duration) var(--animation-timing-function);
+    transition: color $animation-duration $animation-timing-function;
 }
 .company__link:focus,
 .company__link:hover {
-    border-color: var(--accent-color);
+    border-color: $accent-color;
 }
 
 .company__link:hover .company__icon,
 .company__link:focus .company__icon {
-    color: var(--accent-color);
+    color: $accent-color;
 }

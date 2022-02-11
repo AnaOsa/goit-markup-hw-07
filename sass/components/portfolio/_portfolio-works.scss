@@ -1,21 +1,19 @@
 .works {
     display: flex;
     flex-wrap: wrap;
-    margin-left: calc(-1 * var(--works-gap));
-    margin-top: calc(-1 * var(--works-gap));
+    margin-left: calc(-1 * 30px);
+    margin-top: calc(-1 * 30px);
 }
 .works__item {
     flex-basis: calc(100% / 3 - 30px);
-    margin-left: var(--works-gap);
-    margin-top: var(--works-gap);
+    margin-left: 30px;
+    margin-top: 30px;
 }
 .works__link {
     display: block;
 }
 .works__link {
-    transition-property: box-shadow;
-    transition-duration: var(--animation-duration);
-    transition-timing-function: var(--animation-timing-function);
+    transition: box-shadow $animation-duration $animation-timing-function;
 }
 .works__link:hover,
 .works__link:focus {
@@ -37,8 +35,8 @@
     background-color: rgba(33, 150, 243, 0.9);
 
     transform: translateY(100%);
-    transition: transform var(--animation-duration) var(--animation-timing-function),
-        box-shadow var(--animation-duration) var(--animation-timing-function);
+    transition: transform $animation-duration $animation-timing-function,
+        box-shadow $animation-duration $animation-timing-function;
 }
 .thumb__text {
     padding: 63px 24px;
@@ -46,7 +44,7 @@
     font-size: 18px;
     line-height: 1.56;
     letter-spacing: 0.03em;
-    color: var(--white-text-color);
+    color: $secondary-text-color;
 }
 
 .works__link:hover .thumb__overlay,
@@ -67,12 +65,12 @@
     font-size: 18px;
     line-height: calc(36 / 18);
     letter-spacing: 0.06em;
-    color: var(--title-color);
+    color: $title-color;
 }
 .works__text {
     margin: 0;
     font-size: 16px;
     line-height: 1.87;
     letter-spacing: 0.03em;
-    color: var(--text-color);
+    color: $primary-text-color;
 }

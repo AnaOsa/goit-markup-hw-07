@@ -18,15 +18,15 @@
     height: 100%;
     border-radius: 50%;
 
-    color: var(--icon-color);
+    color: $icon-color;
     fill: currentColor;
 
-    transition: color var(--animation-duration) var(--animation-timing-function),
-        background-color var(--animation-duration) var(--animation-timing-function);
+    transition: color $animation-duration $animation-timing-function,
+        background-color $animation-duration $animation-timing-function;
 }
 
 .icon-list__link:hover,
 .icon-list__link:focus {
-    color: var(--white-text-color);
-    background-color: var(--accent-color);
+    color: $secondary-text-color;
+    background-color: $accent-color;
 }

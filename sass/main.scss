@@ -1,7 +1,9 @@
-@import './utils/_modern-normalize';
-@import './utils/_variables';
-@import './utils/_visually-hidden';
+@import './utils/modern-normalize';
+@import './utils/variables';
+@import './utils/reset';
+@import './utils/visually-hidden';
 @import './components/page-header/_page-header';
+@import './components/common/section-container';
 @import './components/common/_logo';
 @import './components/common/btn';
 @import './components/hero/_hero';
@@ -13,5 +15,5 @@
 @import './components/page-footer/_page-footer';
 @import './components/modal/_modal';
 @import './components/modal/_form';
-@import './portfolio/_portfolio-filter';
-@import './portfolio/_portfolio-works';
+@import './components/portfolio/portfolio-filter';
+@import './components/portfolio/portfolio-works';

@@ -18,13 +18,13 @@
     cursor: pointer;
 }
 .modal-form__close-icon {
-    color: #000000;
+    color: $dark-color;
     fill: currentColor;
-    transition: color var(--animation-duration) var(--animation-timing-function);
+    transition: color $animation-duration $animation-timing-function;
 }
 .modal-form__close-btn:focus .modal-form__close-icon,
 .modal-form__close-btn:hover .modal-form__close-icon {
-    color: var(--accent-color);
+    color: $accent-color;
 }
 .modal-form__title {
     margin-bottom: 12px;
@@ -33,7 +33,7 @@
     line-height: calc(23 / 20);
     text-align: center;
     letter-spacing: 0.03em;
-    color: var(--title-color);
+    color: $title-color;
 }
 
 .modal-form__field {
@@ -44,7 +44,7 @@
     font-size: 12px;
     line-height: calc(14 / 12);
     letter-spacing: 0.01em;
-    color: var(--text-color);
+    color: $primary-text-color;
 }
 .modal-form__field--margin {
     margin-bottom: 20px;
@@ -61,13 +61,13 @@
     font-size: 14px;
     line-height: calc(16 / 14);
     letter-spacing: 0.01em;
-    color: var(--text-color);
+    color: $primary-text-color;
     border: 1px solid rgba(33, 33, 33, 0.2);
     box-sizing: border-box;
     border-radius: 4px;
 
     cursor: pointer;
-    transition: outline-color var(--animation-duration) var(--animation-timing-function);
+    transition: outline-color $animation-duration $animation-timing-function;
 }
 .modal-form__textarea {
     padding: 12px 16px;
@@ -89,18 +89,18 @@
     left: 12px;
 
     z-index: 1;
-    color: var(--title-color);
+    color: $title-color;
     fill: currentColor;
     cursor: pointer;
-    transition: color var(--animation-duration) var(--animation-timing-function);
+    transition: color $animation-duration $animation-timing-function;
 }
 
 .modal-form__input:focus + .modal-form__icon {
-    color: var(--accent-color);
+    color: $accent-color;
 }
 .modal-form__input:focus,
 .modal-form__textarea:focus {
-    outline-color: var(--accent-color);
+    outline-color: $accent-color;
 }
 
 .modal-form__terms {
@@ -115,11 +115,11 @@
 .modal-form__link {
     display: inline-block;
     text-decoration-line: underline;
-    color: var(--accent-color);
-    transition: outline-color var(--animation-duration) var(--animation-timing-function);
+    color: $accent-color;
+    transition: outline-color $animation-duration $animation-timing-function;
 }
 .modal-form__link:focus {
-    outline-color: var(--accent-color);
+    outline-color: $accent-color;
 }
 
 .modal-form__check-icon {
@@ -127,23 +127,23 @@
     position: absolute;
     top: auto;
     left: 12px;
-    color: var(--white-text-color);
+    color: $secondary-text-color;
     fill: currentColor;
     border-radius: 2px;
-    transition: color var(--animation-duration) var(--animation-timing-function),
-        background-color var(--animation-duration) var(--animation-timing-function),
-        opacity var(--animation-duration) var(--animation-timing-function);
+    transition: color $animation-duration $animation-timing-function,
+        background-color $animation-duration $animation-timing-function,
+        opacity $animation-duration $animation-timing-function;
 }
 .modal-form__checkbox-icon {
     opacity: 1;
     position: relative;
     margin-right: 8px;
-    color: var(--title-color);
+    color: $title-color;
     fill: currentColor;
-    transition: color var(--animation-duration) var(--animation-timing-function);
+    transition: color $animation-duration $animation-timing-function;
 }
 .modal-form__checkbox:focus-within + .modal-form__checkbox-icon {
-    color: var(--accent-color);
+    color: $accent-color;
 }
 .modal-form__checkbox:checked + .modal-form__checkbox-icon {
     opacity: 0;
@@ -151,8 +151,8 @@
 .modal-form__checkbox:checked ~ .modal-form__check-icon {
     opacity: 1;
     z-index: 1;
-    color: var(--white-text-color);
-    background-color: var(--accent-color);
+    color: $secondary-text-color;
+    background-color: $accent-color;
 }
 .modal-form__btn {
     display: block;

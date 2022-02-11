@@ -1,7 +1,7 @@
 .page-footer {
     padding: 60px 0;
     background-color: #2f303a;
-    color: var(--white-text-color);
+    color: $secondary-text-color;
 }
 .container__page-footer {
     display: flex;
@@ -26,15 +26,15 @@
     letter-spacing: 0.03em;
     color: rgba(255, 255, 255, 0.6);
 
-    transition: color var(--animation-duration) var(--animation-timing-function);
+    transition: color $animation-duration $animation-timing-function;
 }
 .address__link--white {
-    color: var(--white-text-color);
+    color: $secondary-text-color;
 }
 .address__link:hover,
 .address__link:focus,
 .address__link:active {
-    color: var(--accent-color);
+    color: $accent-color;
 }
 
 .page-footer__icons-wrap {
@@ -68,15 +68,13 @@
     height: 100%;
     background-color: rgba(255, 255, 255, 0.1);
     border-radius: 50%;
-    fill: var(--white-text-color);
+    fill: $secondary-text-color;
 
-    transition-property: background-color;
-    transition-duration: var(--animation-duration);
-    transition-timing-function: var(--animation-timing-function);
+    transition: background-color $animation-duration $animation-timing-function;
 }
 .page-footer__icon-link:hover,
 .page-footer__icon-link:focus {
-    background-color: var(--accent-color);
+    background-color: $accent-color;
 }
 .footer-form__inner {
     display: flex;
@@ -92,10 +90,10 @@
     font-size: 16px;
     line-height: 1.25;
     letter-spacing: 0.03em;
-    color: var(--white-text-color);
+    color: $secondary-text-color;
     background-color: transparent;
     border: 1px solid rgba(255, 255, 255, 0.3);
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    box-shadow: (0px 4px 4px rgba(0, 0, 0, 0.15));
     border-radius: 4px;
 }
 .footer-form__input::placeholder {

@@ -1,60 +1,14 @@
-:root {
-    --text-color: #757575;
-    --background-color: #ffffff;
-    --accent-color: #2196f3;
-    --title-color: #212121;
-    --white-text-color: #ffffff;
-    --btn-portfolio: #f5f4fa;
-    --works-gap: 30px;
-    --icon-color: #afb1b8;
-    --animation-duration: 250ms;
-    --animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-body {
-    font-family: 'Roboto', sans-serif;
-    color: var(--text-color);
-    background-color: var(--background-color);
-}
-ul,
-h1,
-h2,
-h3 {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
-a {
-    text-decoration: none;
-}
-img {
-    display: block;
-    max-width: 100%;
-    height: auto;
-}
-
-.container {
-    margin-left: auto;
-    margin-right: auto;
-    width: 1200px;
-    padding-left: 15px;
-    padding-right: 15px;
-}
-
-.section {
-    padding-top: 94px;
-    padding-bottom: 94px;
-}
-.section--no-padding {
-    padding-top: 0;
-}
-.section--background-change {
-    background-color: #f5f4fa;
-}
-.title {
-    margin-bottom: 50px;
-    font-size: 36px;
-    line-height: 1.16;
-    text-align: center;
-    letter-spacing: 0.03em;
-    color: var(--title-color);
-}
+$primary-font: 'Roboto', sans-serif;
+$secondary-font: 'Raleway', sans-serif;
+$primary-bg: #ffffff;
+$secondary-bg: #f5f4fa;
+$dark-bg: #2f303a;
+$dark-color: #000000;
+$primary-text-color: #757575;
+$secondary-text-color: #ffffff;
+$title-color: #212121;
+$accent-color: #2196f3;
+$filter-btn-color: #f5f4fa;
+$animation-duration: 250ms;
+$animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+$icon-color: #afb1b8;

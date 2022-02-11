@@ -8,8 +8,8 @@
     height: 100vh;
     background-color: rgba(0, 0, 0, 0.2);
     opacity: 1;
-    transition: opacity var(--animation-duration) var(--animation-timing-function),
-        visibility var(--animation-duration) var(--animation-timing-function);
+    transition: opacity $animation-duration $animation-timing-function,
+        visibility $animation-duration $animation-timing-function;
 }
 .backdrop.is-hidden {
     visibility: hidden;
@@ -27,10 +27,10 @@
     min-height: 581px;
     padding: 40px;
 
-    background-color: var(--background-color);
+    background-color: $primary-bg;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
         0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
     transform: translate(-50%, -50%) scale(1);
-    transition: transform var(--animation-duration) var(--animation-timing-function);
+    transition: transform $animation-duration $animation-timing-function;
 }
