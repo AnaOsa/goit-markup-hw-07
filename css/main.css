@@ -469,6 +469,15 @@ img {
   padding-right: 15px;
 }
 
+.container--baseline {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+}
+
 .logo {
   font-family: "Raleway", sans-serif;
   font-weight: 700;
@@ -732,15 +741,6 @@ img {
   padding: 60px 0;
   background-color: #2f303a;
   color: #ffffff;
-}
-
-.container__page-footer {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: baseline;
-      -ms-flex-align: baseline;
-          align-items: baseline;
 }
 
 .page-footer__wrap {
