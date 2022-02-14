@@ -44,21 +44,21 @@
     }
 }
 
-.page-header__contacts-list {
+.contacts {
     display: flex;
     align-items: center;
     margin-left: auto;
 }
-.page-header__contacts-list .page-header__contacts-item + .page-header__contacts-item {
+.contacts .contacts__item + .contacts__item {
     margin-left: 30px;
 }
-.page-header__contacts-link {
+.contacts__link {
     @extend %link;
     display: flex;
     align-items: center;
     color: $primary-text-color;
 }
-.page-header__contacts-icon {
+.contacts__icon {
     margin-right: 10px;
     fill: currentColor;
     &:hover {
