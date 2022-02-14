@@ -300,6 +300,39 @@ img {
   margin: -1px;
 }
 
+.page-header__contacts-link, .navigation__link {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: calc(16 / 14);
+  letter-spacing: 0.02em;
+  color: #212121;
+  -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.page-header__contacts-link:hover, .navigation__link:hover, .page-header__contacts-link:focus, .navigation__link:focus, .page-header__contacts-link:active, .navigation__link:active {
+  color: #2196f3;
+}
+
+.modal-form__btn, .page-footer__btn, .hero__btn {
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+  border: transparent;
+  color: #ffffff;
+  background-color: #2196f3;
+  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  cursor: pointer;
+  -webkit-transition-property: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition-property: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.modal-form__btn:hover, .page-footer__btn:hover, .hero__btn:hover, .modal-form__btn:focus, .page-footer__btn:focus, .hero__btn:focus {
+  background-color: #188ce8;
+}
+
 .page-header__wrap {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -320,22 +353,6 @@ img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-}
-
-.link {
-  font-weight: 500;
-  font-size: 14px;
-  line-height: calc(16 / 14);
-  letter-spacing: 0.02em;
-  color: #212121;
-  -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.link:hover,
-.link:focus,
-.link:active {
-  color: #2196f3;
 }
 
 .navigation__list {
@@ -458,27 +475,6 @@ img {
   margin-right: 93px;
 }
 
-.btn {
-  padding: 10px 32px;
-  font-family: inherit;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.87;
-  letter-spacing: 0.06em;
-  border: transparent;
-  color: #ffffff;
-  background-color: #2196f3;
-  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  border-radius: 4px;
-  cursor: pointer;
-  -webkit-transition-property: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition-property: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-.btn:hover, .btn:focus {
-  background-color: #188ce8;
-}
-
 .hero {
   max-width: 1600px;
   margin-left: auto;
@@ -502,6 +498,10 @@ img {
   letter-spacing: 0.06em;
   color: #ffffff;
   text-transform: uppercase;
+}
+
+.hero__btn {
+  padding: 10px 32px;
 }
 
 .benefits {

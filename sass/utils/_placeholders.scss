@@ -1,6 +1,21 @@
-.btn {
-    padding: 10px 32px;
+%icon-list {
+}
 
+%link {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: calc(16 / 14);
+    letter-spacing: 0.02em;
+    color: $title-color;
+
+    transition: color $animation-duration $animation-timing-function;
+    &:hover,
+    &:focus,
+    &:active {
+        color: $accent-color;
+    }
+}
+%btn {
     font-family: inherit;
     font-weight: 700;
     font-size: 16px;

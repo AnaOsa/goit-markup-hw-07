@@ -26,3 +26,7 @@
     color: $secondary-text-color;
     text-transform: uppercase;
 }
+.hero__btn {
+    @extend %btn;
+    padding: 10px 32px;
+}

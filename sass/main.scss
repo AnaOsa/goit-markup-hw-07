@@ -1,11 +1,11 @@
-@import './utils/modern-normalize';
+@import './base/modern-normalize';
 @import './utils/variables';
 @import './utils/reset';
 @import './utils/visually-hidden';
+@import './utils/placeholders';
 @import './components/page-header/_page-header';
 @import './components/common/section-container';
 @import './components/common/_logo';
-@import './components/common/btn';
 @import './components/hero/_hero';
 @import './components/benefits/_benefits-section';
 @import './components/about/_about-section';
