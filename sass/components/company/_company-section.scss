@@ -32,9 +32,9 @@
     color: $icon-color;
     fill: currentColor;
     transition: color $animation-duration $animation-timing-function;
-}
 
-.company__link:hover .company__icon,
-.company__link:focus .company__icon {
-    color: $accent-color;
+    .company__link:hover &,
+    .company__link:focus & {
+        color: $accent-color;
+    }
 }

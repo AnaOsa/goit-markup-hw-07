@@ -14,8 +14,9 @@
     cursor: pointer;
 
     transition-property: background-color $animation-duration $animation-timing-function;
-}
-.btn:hover,
-.btn:focus {
-    background-color: #188ce8;
+
+    &:hover,
+    &:focus {
+        background-color: #188ce8;
+    }
 }

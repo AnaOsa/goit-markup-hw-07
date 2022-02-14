@@ -14,11 +14,12 @@
 }
 .works__link {
     transition: box-shadow $animation-duration $animation-timing-function;
-}
-.works__link:hover,
-.works__link:focus {
-    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
-        1px 4px 6px rgba(0, 0, 0, 0.16);
+
+    &:hover,
+    &:focus {
+        box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+            1px 4px 6px rgba(0, 0, 0, 0.16);
+    }
 }
 
 .thumb {
@@ -37,6 +38,11 @@
     transform: translateY(100%);
     transition: transform $animation-duration $animation-timing-function,
         box-shadow $animation-duration $animation-timing-function;
+
+    .works__link:hover &,
+    .works__link:focus & {
+        transform: translateY(0);
+    }
 }
 .thumb__text {
     padding: 63px 24px;
@@ -47,10 +53,6 @@
     color: $secondary-text-color;
 }
 
-.works__link:hover .thumb__overlay,
-.works__link:focus .thumb__overlay {
-    transform: translateY(0);
-}
 .works__border {
     padding: 20px 24px;
     width: 370px;

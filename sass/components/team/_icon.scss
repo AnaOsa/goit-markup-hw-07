@@ -6,10 +6,12 @@
 .icon-list__item {
     width: 44px;
     height: 44px;
+
+    &:not(:last-child) {
+        margin-right: 10px;
+    }
 }
-.icon-list__item:not(:last-child) {
-    margin-right: 10px;
-}
+
 .icon-list__link {
     display: flex;
     align-items: center;
@@ -23,10 +25,10 @@
 
     transition: color $animation-duration $animation-timing-function,
         background-color $animation-duration $animation-timing-function;
-}
 
-.icon-list__link:hover,
-.icon-list__link:focus {
-    color: $secondary-text-color;
-    background-color: $accent-color;
+    &:hover,
+    &:focus {
+        color: $secondary-text-color;
+        background-color: $accent-color;
+    }
 }
