@@ -1,6 +1,3 @@
-%icon-list {
-}
-
 %link {
     font-weight: 500;
     font-size: 14px;
@@ -34,4 +31,13 @@
     &:focus {
         background-color: #188ce8;
     }
+}
+%icon-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
 }
