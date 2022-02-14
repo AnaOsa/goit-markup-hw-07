@@ -11,12 +11,12 @@
     transition: opacity $animation-duration $animation-timing-function,
         visibility $animation-duration $animation-timing-function;
 }
-.backdrop.is-hidden {
+.backdrop.backdrop--is-hidden {
     visibility: hidden;
     opacity: 0;
     pointer-events: none;
 }
-.backdrop.is-hidden .modal-form__wrap {
+.backdrop.backdrop--is-hidden .modal-form__wrap {
     transform: translate(-50%, -50%) scale(2);
 }
 .modal-form__wrap {

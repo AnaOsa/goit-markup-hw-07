@@ -2,12 +2,12 @@
     display: flex;
 }
 
-.company__item:not(:last-child) {
-    margin-right: 30px;
-}
 .company__item {
     width: 170px;
     height: 92px;
+    &:not(:last-child) {
+        margin-right: 30px;
+    }
 }
 .company__link {
     display: flex;
@@ -21,16 +21,17 @@
     border-radius: 4px;
 
     transition: border-color $animation-duration $animation-timing-function;
+
+    &:focus,
+    &:hover {
+        border-color: $accent-color;
+    }
 }
 
 .company__icon {
     color: $icon-color;
     fill: currentColor;
     transition: color $animation-duration $animation-timing-function;
-}
-.company__link:focus,
-.company__link:hover {
-    border-color: $accent-color;
 }
 
 .company__link:hover .company__icon,
