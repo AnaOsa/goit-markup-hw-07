@@ -17,18 +17,3 @@
     letter-spacing: 0.03em;
     color: $title-color;
 }
-.container {
-    margin-left: auto;
-    margin-right: auto;
-    width: 1200px;
-    padding-left: 15px;
-    padding-right: 15px;
-}
-.container--center {
-    display: flex;
-    align-items: center;
-}
-.container--baseline {
-    display: flex;
-    align-items: baseline;
-}
